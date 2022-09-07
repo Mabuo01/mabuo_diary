@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for diary in diary_list %}
+<p>
+    {{ diary.date }}
+    <a href="{% url 'polls:diary_detail' diary.pk %}">{{ diary.title }}</a>
+</p>
+{% endfor %}
+<a href="{% url 'polls:index' %}">戻る</a>
+
+{% endblock  %}
+

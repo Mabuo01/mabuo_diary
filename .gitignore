@@ -1,0 +1,3 @@
+myvenv
+db.sqlite3
+local_settings.py #追加する
